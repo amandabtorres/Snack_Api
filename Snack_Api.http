@@ -1,0 +1,6 @@
+@Snack_Api_HostAddress = http://localhost:5217
+
+GET {{Snack_Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
