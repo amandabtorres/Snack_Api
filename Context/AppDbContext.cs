@@ -1,7 +1,7 @@
-﻿using ApiECommerce.Entities;
+﻿using Snack_Api.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace ApiECommerce.Context
+namespace Snack_Api.Context
 {
     public class AppDbContext : DbContext
     {

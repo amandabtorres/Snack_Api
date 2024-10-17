@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ApiECommerce.Entities
+namespace Snack_Api.Entities
 {
     public class User
     {

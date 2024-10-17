@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
-namespace ApiECommerce.Entities
+namespace Snack_Api.Entities
 {
     public class Product
     {
