@@ -1,4 +1,7 @@
 
+using ApiECommerce.Context;
+using Microsoft.EntityFrameworkCore;
+
 namespace Snack_Api
 {
     public class Program
@@ -13,6 +16,10 @@ namespace Snack_Api
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            var connection = builder.Configuration.GetConnectionString("DefaultConnection");
+
+            builder.Services.AddDbContext<AppDbContext>(option => option.UseSqlServer(connection));
 
             var app = builder.Build();
 
