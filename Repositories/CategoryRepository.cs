@@ -15,7 +15,7 @@ namespace Snack_Api.Repositories
 
         public async Task<IEnumerable<Category>> GetCategories()
         {
-            return await _dbContext.Categories.ToListAsync();
+            return await _dbContext.Categories.AsNoTracking().ToListAsync();
         }
     }
 }

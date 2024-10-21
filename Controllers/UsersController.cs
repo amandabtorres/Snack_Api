@@ -80,7 +80,7 @@ namespace Snack_Api.Controllers
         }
 
         [Authorize]
-        [HttpPost("uploadimage")]
+        [HttpPost("uploadimageuser")]
         public async Task<IActionResult> UploadUserPhoto(IFormFile image)
         {
             var userEmail = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
@@ -113,7 +113,7 @@ namespace Snack_Api.Controllers
 
 
         [Authorize]
-        [HttpGet("userimage")]
+        [HttpGet("[action]")]
         public async Task<IActionResult> GetUserImage()
         {
             //see if user is logged
